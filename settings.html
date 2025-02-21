@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings - BrightPath Academy</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="settings.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="Blue_and_Yellow_Modern_Innovating_Online_Learning_Logo-removebg-preview.png" alt="BrightPath Academy Logo">
+      <span>BrightPath Academy</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="courses.html"><i class="fas fa-graduation-cap"></i> Courses</a></li>
+      <li><a href="index.html#materials"><i class="fas fa-book"></i> Materials</a></li>
+      <li class="active"><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="settings-section">
+      <h1>Settings & Information</h1>
+      
+      <div class="settings-grid">
+        <div class="settings-card" id="loginCard">
+          <i class="fas fa-user-circle"></i>
+          <h3>Login</h3>
+          <p>Access your personalized dashboard</p>
+          <button class="settings-btn" onclick="showLoginModal()">
+            <i class="fas fa-sign-in-alt"></i> Sign In
+          </button>
+        </div>
+
+        <div class="settings-card">
+          <i class="fas fa-bullhorn"></i>
+          <h3>Updates</h3>
+          <p>Check out what's new</p>
+          <button class="settings-btn" onclick="showUpdatesModal()">
+            <i class="fas fa-clock"></i> View Updates
+          </button>
+        </div>
+
+        <div class="settings-card">
+          <i class="fas fa-info-circle"></i>
+          <h3>About</h3>
+          <p>Learn more about BrightPath Academy</p>
+          <button class="settings-btn" onclick="showAboutModal()">
+            <i class="fas fa-book-reader"></i> Read More
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('loginModal')">&times;</span>
+      <h2>Welcome Back!</h2>
+      <p>Sign in to access your personalized learning experience</p>
+      
+      <div class="google-signin">
+        <div id="g_id_onload"
+          data-client_id="YOUR_GOOGLE_CLIENT_ID"
+          data-callback="handleGoogleSignIn">
+        </div>
+        <div class="g_id_signin" data-type="standard"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Updates Modal -->
+  <div id="updatesModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('updatesModal')">&times;</span>
+      <h2>Latest Updates</h2>
+      <div class="updates-list">
+        <div class="update-item">
+          <h3>New Study Materials Added!</h3>
+          <p>We've added comprehensive study materials for medical entrance preparation including Physics, Chemistry, Zoology, and Botany books.</p>
+          <span class="update-date">Added June 2025</span>
+        </div>
+        <div class="update-item">
+          <h3>JEE Courses Expansion</h3>
+          <p>New courses added for JEE preparation including Lakshya, Arjuna, and Prayas batches with expert faculty and comprehensive study material.</p>
+          <span class="update-date">Added May 2025</span>
+        </div>
+        <div class="update-item">
+          <h3>Board Exam Special Courses</h3>
+          <p>Introducing specialized courses for 10th and 12th board exam preparation with focused study material and practice tests.</p>
+          <span class="update-date">Added May 2025</span>
+        </div>
+        <div class="update-item">
+          <h3>SSC JE Civil Course Launch</h3>
+          <p>New course launched for SSC JE Civil aspirants with comprehensive coverage of all topics and expert guidance.</p>
+          <span class="update-date">Added April 2025</span>
+        </div>
+        <div class="update-item">
+          <h3>Enhanced Learning Experience</h3>
+          <p>Platform updates including dark mode support, improved navigation, and better mobile responsiveness.</p>
+          <span class="update-date">Added March 2025</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Modal -->
+  <div id="aboutModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('aboutModal')">&times;</span>
+      <h2>About BrightPath Academy</h2>
+      <div class="about-content">
+        <p>BrightPath Academy is committed to revolutionizing education by making quality learning accessible to everyone. Our mission is to break down barriers to education and empower learners worldwide with comprehensive, free educational resources.</p>
+        
+        <div class="about-features">
+          <div class="feature">
+            <i class="fas fa-infinity"></i>
+            <h4>100% Free Forever</h4>
+            <p>We believe that quality education should be accessible to all. Our platform and all its resources will always remain free.</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-award"></i>
+            <h4>Expert Faculty</h4>
+            <p>Learn from experienced educators and industry professionals who are passionate about teaching.</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-globe"></i>
+            <h4>Global Community</h4>
+            <p>Join our vibrant community of learners from around the world, sharing knowledge and growing together.</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-book-reader"></i>
+            <h4>Comprehensive Resources</h4>
+            <p>Access a wide range of study materials, from video lectures to practice tests and downloadable resources.</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-users"></i>
+            <h4>Student Support</h4>
+            <p>Get help when you need it with our dedicated support system and active community forums.</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-mobile-alt"></i>
+            <h4>Learn Anywhere</h4>
+            <p>Access your courses and study materials from any device, anywhere, anytime.</p>
+          </div>
+        </div>
+
+        <div class="about-mission" style="margin-top: 3rem;">
+          <h3>Our Vision</h3>
+          <p>We envision a world where quality education is not a privilege but a fundamental right. Through technology and innovation, we're working to make this vision a reality.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-bottom">
+      <p>&copy; 2025 BrightPath Academy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="settings.js"></script>
+</body>
+</html>

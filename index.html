@@ -1,0 +1,164 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrightPath Academy - Empowering Education</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="Blue_and_Yellow_Modern_Innovating_Online_Learning_Logo-removebg-preview.png" alt="BrightPath Academy Logo">
+      <span>BrightPath Academy</span>
+    </div>
+    <div class="nav-right">
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li class="active"><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="courses.html"><i class="fas fa-graduation-cap"></i> Courses</a></li>
+      <li><a href="materials.html"><i class="fas fa-book"></i> Materials</a></li>
+      <li><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="hero">
+      <div class="hero-content">
+        <div class="welcome-text">
+          <h1>Welcome to <span class="highlight">BrightPath</span> Academy</h1>
+          <p class="subtitle">Your Gateway to Excellence in Education</p>
+          <div class="description">
+            <p>Empowering minds through accessible, quality education for all. Join our community of learners and unlock your potential with our comprehensive courses and expert guidance.</p>
+          </div>
+          <div class="cta-group">
+            <a href="courses.html" class="cta-button primary">
+              <i class="fas fa-graduation-cap"></i>
+              Explore Courses
+            </a>
+          </div>
+          <div class="stats">
+            <div class="stat-item">
+              <span class="number">1000+</span>
+              <span class="label">Students</span>
+            </div>
+            <div class="stat-item">
+              <span class="number">50+</span>
+              <span class="label">Courses</span>
+            </div>
+            <div class="stat-item">
+              <span class="number">100%</span>
+              <span class="label">Free</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-animation">
+        <lottie-player 
+          src="https://assets7.lottiefiles.com/packages/lf20_pwohahvd.json"
+          background="transparent"
+          speed="1"
+          style="width: 100%; height: auto;"
+          loop
+          autoplay>
+        </lottie-player>
+      </div>
+    </section>
+
+    <section id="features">
+      <h2>Why Choose BrightPath?</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Online Learning</h3>
+          <p>Learn at your own pace from anywhere in the world</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-certificate"></i>
+          <h3>Certified Courses</h3>
+          <p>Earn recognized certificates upon completion</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-users"></i>
+          <h3>Expert Teachers</h3>
+          <p>Learn from industry professionals</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-clock"></i>
+          <h3>Flexible Schedule</h3>
+          <p>Study according to your convenience</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>BrightPath Academy</h4>
+        <p>Empowering education for everyone</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="materials.html">Materials</a></li>
+          <li><a href="settings.html">Settings</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Connect With Us</h4>
+        <div class="social-links">
+          <a href="https://facebook.com/bhatakash07" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://t.me/anonymousmrak" target="_blank"><i class="fab fa-telegram"></i></a>
+          <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://instagram.com/bhatakash07" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 BrightPath Academy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div id="chat-widget" class="chat-widget collapsed">
+    <div class="chat-header">
+      <i class="fas fa-robot"></i> GURUAI
+      <button class="minimize-btn"><i class="fas fa-minus"></i></button>
+    </div>
+    <div class="chat-messages">
+      <div class="message bot">
+        <i class="fas fa-robot"></i>
+        <div class="message-content">
+          Hi! I'm GURUAI, your personal learning assistant. How can I help you today?
+        </div>
+      </div>
+    </div>
+    <div class="chat-input">
+      <div class="chat-input-wrapper">
+        <button class="new-chat-btn" title="Start New Chat">
+          <i class="fas fa-plus"></i>
+        </button>
+        <input type="text" placeholder="Ask me anything..." id="chat-input-field">
+      </div>
+      <button id="send-message">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </div>
+  </div>
+
+  <button id="chat-widget-button" class="chat-widget-button">
+    <i class="fas fa-robot"></i>
+  </button>
+
+  <script src="main.js"></script>
+  <script src="chat.js"></script>
+</body>
+</html>
